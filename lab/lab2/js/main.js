@@ -126,10 +126,33 @@ of the application to report this information.
 var dataset = "https://raw.githubusercontent.com/CPLN692-MUSA611/datasets/master/geojson/philadelphia-garbage-collection-boundaries.geojson"
 var featureGroup;
 
-var myStyle = function(feature) {
-  return {};
-};
 
+var myStyle = function(feature) {
+  if (feature.properties.COLLDAY == "FRI") {
+    return {fillColor: 'red'};
+  }
+    else if
+      (feature.properties.COLLDAY == "MON"){
+        return {fillColor: 'green'};
+      }
+      else if
+      (feature.properties.COLLDAY== "TUE"){
+        return {fillColor: 'aqua'};
+      }
+      else if
+      (feature.properties.COLLDAY=="WED") {
+        return {fillColor: 'maroon'};
+      }
+      else if
+      (feature.properties.COLLDAY=="THU") {
+        return {fillColor: 'olive'};
+      }
+
+
+    ;
+
+};
+//
 var showResults = function() {
   /* =====================
   This function uses some jQuery methods that may be new. $(element).hide()
@@ -145,7 +168,8 @@ var showResults = function() {
 
 
 var eachFeatureFunction = function(layer) {
-  layer.on('click', function (event) {
+
+layer.on('click', function (event) {
     /* =====================
     The following code will run every time a layer on the map is clicked.
     Check out layer.feature to see some useful data about the layer that
@@ -153,11 +177,38 @@ var eachFeatureFunction = function(layer) {
     ===================== */
     console.log(layer.feature);
     showResults();
+      var myDOW = layer.feature.properties.COLLDAY;
+      switch (myDOW) {
+    case "MON":
+        myDOW = "Monday";
+        break;
+    case "TUE":
+        myDOW = "Tuesday";
+        break;
+    case "WED":
+        myDOW = "Wednesday";
+        break;
+    case "THU":
+        myDOW = "Thursday";
+        break;
+    case "FRI":
+        myDOW = "Friday";
+        break;
+}
+      $('.day-of-week').html(myDOW);
+
   });
 };
 
 var myFilter = function(feature) {
-  return true;
+
+  if (feature.properties.COLLDAY==" "){
+    return false;}
+    else {
+      return true;
+    }
+
+
 };
 
 $(document).ready(function() {
