@@ -21,17 +21,14 @@ var state = {
                     // get so small that it is smaller than 0.
   "slideData": [
     {
-      "name": "How the Air Campaign Against ISIS Grew",
-      "description": "The American-led air campaign against the Islamic State began as a limited operation, but quickly grew into what officials said will be a multi-year effort to destroy the group that will require local forces on the ground."
-    },
+      "name": "Slide 1",
+      "description": "all bike and ped crash data"},
     {
-      "name": "A Limited Operation Begins",
-      "language": "President Obama approves targeted strikes to protect Americans in Erbil and to help members of the Yazidi minority trapped by ISIS on Mount Sinjar. He stresses that the mission is limited and that he will not allow the United States to be dragged into fighting another war in Iraq."
-    },
+      "name": "Slide 2",
+      "language": "all bike and ped fatalities"},
     {
-      "name": "A New Location Is Targeted",
-      "description": "American airstrikes help Iraqi forces reclaim Mosul Dam. President Obama says the limited operation is necessary to protect Americans in Baghdad, 290 miles away, who would be threatened if the dam broke."
-    }
+      "name": "Slide 3",
+      "description": "a certain intersection"}
   ]
 };
 

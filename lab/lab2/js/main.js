@@ -137,15 +137,15 @@ var myStyle = function(feature) {
       }
       else if
       (feature.properties.COLLDAY== "TUE"){
-        return {fillColor: 'aqua'};
+        return {fillColor: 'blue'};
       }
       else if
       (feature.properties.COLLDAY=="WED") {
-        return {fillColor: 'maroon'};
+        return {fillColor: 'purple'};
       }
       else if
       (feature.properties.COLLDAY=="THU") {
-        return {fillColor: 'olive'};
+        return {fillColor: 'yellow'};
       }
 
 
