@@ -29,16 +29,17 @@ p.main {
 
 .legend {
   position: absolute;
-  left: 80px;
-  width: 200px;
+  left: 1080px;
+  width: 150px;
   height: 200px;
-  top: 419px;
-  bottom: 5px;
+  top: 5px;
+  bottom: 410px;
   padding: 30px;
   font-size: 28px;
   font-style: "bold";
   background-color: #ced6e2;
   z-index: 2000;
+  border: 1px solid #999
 }
 #monday {
   font-size: 12px;
@@ -67,6 +68,7 @@ p.main {
   margin-right: 137px;
   /*margin-top: 25%;*/
   padding: 5px 5px 5px 5px;
+  border: 1px solid #999
 }
 
 #tue{
@@ -80,6 +82,7 @@ p.main {
   margin-right: 137px;
   /*margin-top: 25%;*/
   padding: 5px 5px 5px 5px;
+  border: 1px solid #999
 }
 
 #wed{
@@ -93,6 +96,7 @@ p.main {
   margin-right: 120px;
   /*margin-top: 25%;*/
   padding: 5px 5px 5px 5px;
+  border: 1px solid #999
 }
 
 #thu{
@@ -106,6 +110,7 @@ p.main {
   margin-right: 120px;
   /*margin-top: 25%;*/
   padding: 5px 5px 5px 5px;
+  border: 1px solid #999
 }
 
 #fri{
@@ -119,6 +124,7 @@ p.main {
   margin-right: 120px;
   /*margin-top: 25%;*/
   padding: 5px 5px 5px 5px;
+  border: 1px solid #999
 }
 
 
@@ -128,4 +134,4 @@ p.main {
  +    width: 30px;
  +    margin-right: 5px;
  +    margin-left: 0;
- +    border: 1px solid #999*/
+ +
