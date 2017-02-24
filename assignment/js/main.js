@@ -22,6 +22,10 @@ L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ex
   ================================ */
 //TO DO LIST.
 //mock up main html
+  //?: the previous slide shouldn't be there for slide one
 //change that html with sayCurrentSlideName
 //write each slide's function
 //change to next slide function when button is clicked--ask for help on friday.
+//add existing bike lanes and crosswalks to map??
+//?can I subset by feature or do I need to re-do data set
+//projects to focus on->chinatown sharrow, buffered bike lane pilot on Rittenhouse Sq. West
