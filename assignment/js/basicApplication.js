@@ -45,7 +45,7 @@ var clickPreviousButton = function() {
   if (state.slideNumber >0) {
     state.slideNumber = state["slideNumber"] - 1;
   }
-  console.log("slideNumber2", state.slideNumber);
+  console.log("prior slide", state.slideNumber);
 };
 
 var saySlideName = function(slide) {
@@ -64,5 +64,21 @@ saySlideName(thirdSlide);
 
 var sayCurrentSlideName = function() {
   var slideDataPlace = state["slideNumber"]
+  //change the html
   console.log(state.slideData[slideDataPlace].name);
 }
+
+
+var showCurrentSlide = function() {
+	if (state.slideNumber == 1) {
+    showSlideOne();
+  } else if (state.slideNumber == 2){
+    removeLayer();
+    showSlideTwo();
+  } else if (state.slideNumber == 3){
+  	// removeLayer2();
+    showSlideThree2();
+    // showSlideThree1();
+
+  }
+};
