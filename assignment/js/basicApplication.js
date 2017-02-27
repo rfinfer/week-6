@@ -25,10 +25,16 @@ var state = {
       "description": "all bike and ped crash data"},
     {
       "name": "Slide 2",
-      "language": "all bike and ped fatalities"},
+      "language": "now filter by bike and ped as different color markers"},
     {
       "name": "Slide 3",
-      "description": "a certain intersection"}
+      "description": "zoom in to roosevelt & Red Lion"},
+    {
+      "name": "Slide 4",
+      "description": "zoom over to roosevelt & Rhawn"},
+    {
+      "name": "Slide 5",
+      "descrition": "Now show all the fatalities"},
   ]
 };
 
@@ -41,7 +47,7 @@ var clickNextButton = function(event) {
 
 
 //thing.click(clickNextButton)
-var clickPreviousButton = function() {
+var clickPreviousButton = function(event) {
   if (state.slideNumber >0) {
     state.slideNumber = state["slideNumber"] - 1;
   }
@@ -72,13 +78,22 @@ var sayCurrentSlideName = function() {
 var showCurrentSlide = function() {
 	if (state.slideNumber == 1) {
     showSlideOne();
+    //all crashes
   } else if (state.slideNumber == 2){
-    removeLayer();
     showSlideTwo();
+
   } else if (state.slideNumber == 3){
   	// removeLayer2();
-    showSlideThree2();
-    // showSlideThree1();
+    //zoom to main extent and show fatalities
+    //removeLayer();
+    showSlideThree();
+    showSlideThree1();
+  } else if (state.slideNumber == 4) {
+    //zoom to roosevelt deaths
+    showSlideFour();
+  } else if (state.slideNumber ==5){
+    showSlideFive1();
+    showSlideFive();
 
   }
 };

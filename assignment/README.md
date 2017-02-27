@@ -90,3 +90,16 @@ might write your comments.
 
 Write the three specified functions in basicApplication.js. Test them out by opening
 basicApplication.html.
+
+
+
+CURRENT PROBLEMS/NEXT STEPS 2.26.2017
+
+
+to do->
+- append text
+- make slide 2
+- filter colors of markers
+- hide previous button on first page
+- hide next button on last page
+- style
